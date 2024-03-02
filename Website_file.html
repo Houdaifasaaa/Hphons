@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Control Page</title>
+</head>
+<body>
+    <h1>Phone Control Page</h1>
+    <form id="phoneControlForm">
+        <label for="simNumber">SIM Number:</label><br>
+        <input type="text" id="simNumber" name="simNumber"><br>
+        <label for="phoneCompany">Phone Company:</label><br>
+        <input type="text" id="phoneCompany" name="phoneCompany"><br><br>
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <script>
+        function submitForm() {
+            var simNumber = document.getElementById("simNumber").value;
+            var phoneCompany = document.getElementById("phoneCompany").value;
+            
+            // Call API or perform actions with simNumber and phoneCompany
+            // Example: sendAjaxRequest(simNumber, phoneCompany);
+        }
+    </script>
+</body>
+</html>
